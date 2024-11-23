@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import io from 'socket.io-client';
 
-const socket = io('https://real-time-chat-app-seven-orcin.vercel.app/api');
+const socket = io('https://real-time-chat-app-seven-orcin.vercel.app');
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
       setMessages((prevMessage)=>[...prevMessage,message])
       setMessageCount((prevCount)=> prevCount + 1)
     }
-    socket.on('message',handleMessage)
+      socket.on('message',handleMessage)
     return()=>{
       socket.off('message',handleMessage)
     }
