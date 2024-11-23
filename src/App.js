@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import io from 'socket.io-client';
 
 const socket = io('http://localhost:4000');
@@ -29,6 +30,10 @@ function App() {
 
   return (
     <div>
+      <Helmet>
+      <title>Real-time Chat Application | Ashkan Golzad</title>
+      <meta name="description" content="A real-time chat application with dynamic message. developed by Ashkan Golzad. make with node js, express js, react js and tailwind css!" />
+      </Helmet>
     <div className='md:text-2xl text-lg font-bold text-center w-full animate-pulse mt-8 mb-12'>Simple Real-time Chat Application with Node js, Express js and React js</div>
     <div className='md:flex md:w-[80%] md:ml-[10%]'>
 
@@ -51,7 +56,16 @@ function App() {
       </div>
 
     </div>
-
+    <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center mt-12 mb-2">
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4 font-['font1'] text-md"
+          href="https://ashkangolzad.ir"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        by AG
+        </a>
+    </footer>
     </div>
   );
 }
