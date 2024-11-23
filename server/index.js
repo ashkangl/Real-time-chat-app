@@ -7,13 +7,13 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-    origin: 'https://real-time-chat-app-seven-orcin.vercel.app',
+    origin: 'http://localhost:3000',
     methods: ['GET', 'POST']
     }
     });
     
 app.use(cors({
-    origin: 'https://real-time-chat-app-seven-orcin.vercel.app'
+    origin: 'http://localhost:3000'
 }));
 
 const colors = ['#E1BEE7','#EF9A9A','#B3E5FC','#C5E1A5','#FFF176','#FFAB91','#E53935','#1E88E5','#FDD835']
