@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:4000');
+const socket = io('https://real-time-chat-app-seven-orcin.vercel.app');
 
 function App() {
 
