@@ -19,8 +19,8 @@
     "destination": "server"
     },
     {
-        "src": "/(.*)",
-        "dest": "/server/index.js"
+        "source": "/(.*)",
+        "destination": "/server/index.js"
         }
     ]
     }
