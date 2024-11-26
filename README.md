@@ -14,7 +14,7 @@ This is a real-time chat application built with Node.js, Express.js, React.js, a
 
 
 ## Demo
-[![Watch the video](https://www.youtube.com/embed/W1nsao5S9HI?si=mI07w7wUFYHqNEu-)
+[![Watch the video](https://i.ytimg.com/vi/W1nsao5S9HI/maxresdefault.jpg)](https://www.youtube.com/watch?v=W1nsao5S9HI)
 
 ## Installation
 1. Clone the repository:
