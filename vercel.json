@@ -19,8 +19,18 @@
     "destination": "server"
     },
     {
-        "source": "/(.*)",
-        "destination": "/server/index.js"
-        }
-    ]
+    "source": "/(.*)",
+    "destination": "/$1"
+    }
+    ],
+    "routes": [
+{
+"src": "/public/(.*)",
+"dest": "/public/index.html"
+},
+{
+"src": "/(.*)",
+"dest": "/server/index.js"
+}
+]
     }
