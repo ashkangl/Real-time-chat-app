@@ -34,8 +34,4 @@ app.get('/',(req,res)=>{
     res.json({message: 'Hello from server!'})
 })
 
-app.get('/api',(req,res)=>{
-    res.json({message: 'Hello from api!'})
-})
-
 server.listen(4000, () => console.log('Server connected on port 4000'))
